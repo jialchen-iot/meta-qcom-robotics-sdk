@@ -17,6 +17,12 @@ inherit packagegroup
 # About qualcomm-qrb-ros information, Please refer to https://github.com/qualcomm-qrb-ros.
 QUALCOMM_QRB_ROS = " \
     ocr-service \
+    lib-mem-dmabuf \
+    dmabuf-transport \
+    qrb-ros-transport-image-type \
+    qrb-ros-transport-imu-type \
+    qrb-ros-transport-point-cloud2-type \
+    qrb-sensor-client \
 "
 
 # If it is qrb ros sample, Please place all of them under this variable.
@@ -30,6 +36,7 @@ QRB_ROS_SAMPLE = " \
 EXTERNAL_OPENSOURCE = " \
     ${ROS_GST_BRIDGE} \
     rplidar-ros2 \
+    orbbec-camera \
 "
 
 ROS_GST_BRIDGE = " \
